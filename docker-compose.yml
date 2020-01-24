@@ -1,0 +1,15 @@
+version: "3"
+services:
+  builder:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: deep_senti_bank
+    volumes:
+      - ./source:/usr/src/source
+    environment:
+      - "TZ=Japan"
+    working_dir: /usr/src/source
+    tty: true
+
+
