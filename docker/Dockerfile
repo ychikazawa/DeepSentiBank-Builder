@@ -35,7 +35,10 @@ RUN git clone -b ${CLONE_TAG} --depth 1 https://github.com/BVLC/caffe.git .
 
 COPY ./source/extract_nfeatures.cpp  ${CAFFE_ROOT}/tools
 
-RUN pip install --upgrade pip && \
+# FYI: Python 2 is no longer supported since pip 21.0.
+# https://stackoverflow.com/questions/65869296/installing-pip-is-not-working-in-python-3-6/65871131#65871131
+# https://pip.pypa.io/en/stable/news/#id1
+RUN pip install --upgrade "pip < 21.0"  && \
     cd python && for req in $(cat requirements.txt) pydot; do pip install $req; done && cd .. && \
     mkdir build && cd build && \
     cmake -DCPU_ONLY=1 .. && \
