@@ -10,6 +10,9 @@ services:
     environment:
       - "TZ=Japan"
     working_dir: /usr/src/source
+    command: > 
+      bash -c "cp /opt/caffe/build/tools/extract_nfeatures /usr/src/source &&
+      /bin/bash"
     tty: true
 
 

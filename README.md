@@ -8,8 +8,6 @@ Make the executable file (`extract_nfeatures`) for [DeepSentiBank](https://githu
 ## Usage
 - Run `docker-compose build`.
 - Run `docker-compose up -d`.
-- Run `docker-compose exec builder bash`.
-- Run `cp /opt/caffe/build/tools/extract_nfeatures .` in container.
 
 You can get the executable file (`extract_nfeatures`) in source folder.
 
