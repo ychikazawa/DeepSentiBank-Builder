@@ -13,7 +13,10 @@ Make the executable file (`extract_nfeatures`) for [DeepSentiBank](https://githu
 
 You can get the executable file (`extract_nfeatures`) in source folder.
 
-Add this file to your [DeepSentiBank](https://github.com/generalmilk/DeepSentiBank) folder, and run `python sentiBank.py test_image.jpg`. 
+## Run in DeepSentiBank
+Download `caffe_sentibank_train_iter_250000` file from [this url](https://www.dropbox.com/s/lv3p67m21kr3mrg/caffe_sentibank_train_iter_250000?dl=1).
+
+Then, add `extract_nfeatures` and `caffe_sentibank_train_iter_250000` file to your [DeepSentiBank](https://github.com/generalmilk/DeepSentiBank) folder, and run `python sentiBank.py test_image.jpg`. 
 
 You can get output json file: `test_image.json`.
 
