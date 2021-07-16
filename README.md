@@ -15,6 +15,7 @@ You can get the executable file (`extract_nfeatures`) in source folder.
 
 ## Run DeepSentiBank
 ### Test in docker
+
 You can test creating json in this builder project.
 
 After running the following command, `test_image.json` file will be output to source/DeepSentibank folder.
