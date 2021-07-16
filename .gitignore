@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# DeepSentiBank-builder
+source/extract_nfeatures
+source/DeepSentiBank
